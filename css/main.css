@@ -496,6 +496,14 @@ a.link.current.link-underline {
   margin-left: 50px;
 }
 
+.site-nav {
+  display: none;
+}
+
+.item {
+  display: none;
+}
+
 .site-nav .link {
   display: block;
   padding-top: 32px;
