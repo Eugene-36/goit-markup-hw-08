@@ -15,14 +15,14 @@ font-size: 36px;
 line-height: 1.16;
 text-align: center;
 }
-.position-for-all {
-   display: flex;
-}
-.info-team:not(:last-child) {
-   margin-right: 30px;
-}
+// .position-for-all {
+//    display: flex;
+// }
+// .info-team:not(:last-child) {
+//    // margin-right: 30px;
+// }
 .info-team {
-   width: calc((100% - 30px * 3) / 4);
+   // width: calc((100% - 30px * 3) / 4);
    padding-bottom: 24px;
    background-color: $white-color;
    text-align: center;
@@ -32,7 +32,8 @@ text-align: center;
    }
 }
 .position-for-all img {
-   display: block;
+   // display: block;
+   max-width: 100%;
 }
 img {
    border-style: none;

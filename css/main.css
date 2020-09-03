@@ -317,6 +317,10 @@ html {
           box-sizing: inherit;
 }
 
+* {
+  outline: solid 2px tomato;
+}
+
 body {
   color: #757575;
   font-family: Roboto, sans-serif;
@@ -329,7 +333,7 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
+  max-width: 1200px;
   /* outline: 2px solid tomato; */
 }
 
@@ -400,10 +404,30 @@ body {
 .container-head {
   margin-left: auto;
   margin-right: auto;
-  width: 1230px;
   /* outline: 2px solid tomato; */
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container-head {
+    width: 480px;
+    background-color: turquoise;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container-head {
+    width: 768px;
+    background-color: violet;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-head {
+    width: 1200px;
+    background-color: yellow;
+  }
 }
 
 .navigation {
@@ -629,18 +653,7 @@ a.link.current.link-underline {
 }
 
 .list-qualities {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.list-qualities-text {
-  min-width: 270px;
-  margin-right: 30px;
-}
-
-.list-qualities-text {
-  width: calc((100% - 90px) / 3);
+  text-align: center;
 }
 
 .list-qualities div {
@@ -678,6 +691,7 @@ a.link.current.link-underline {
   line-height: 1.7;
   margin-top: 10px;
   margin-bottom: 0;
+  text-align: initial;
 }
 
 .section-work-company {
@@ -757,11 +771,11 @@ a.link.current.link-underline {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 .clients-logo, .social-icon, .social-icons-link, .social-icon {
@@ -770,7 +784,12 @@ a.link.current.link-underline {
 }
 
 .clients-logo {
-  margin-right: 30px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+.clients-logo:nth-child(2n + 1) {
+  margin-left: 0px;
 }
 
 .social-icons-link {
@@ -832,18 +851,7 @@ a.link.current.link-underline {
   text-align: center;
 }
 
-.position-for-all {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.info-team:not(:last-child) {
-  margin-right: 30px;
-}
-
 .info-team {
-  width: calc((100% - 30px * 3) / 4);
   padding-bottom: 24px;
   background-color: #FFFFFF;
   text-align: center;
@@ -856,7 +864,7 @@ a.link.current.link-underline {
 }
 
 .position-for-all img {
-  display: block;
+  max-width: 100%;
 }
 
 img {

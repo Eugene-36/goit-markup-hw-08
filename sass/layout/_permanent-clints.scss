@@ -14,15 +14,26 @@ text-align: center;
 }
 .clients {
 display: flex;
+flex-wrap: wrap;
 justify-content: center;
-justify-content: space-around;
+
+// display: flex;
+// justify-content: center;
+// justify-content: space-around;
 }
 .clients-logo, .social-icon, .social-icons-link, .social-icon {
 transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-logo {
-margin-right: 30px;
+// .clients-logo {
+// margin-right: 30px;
+// }
+.clients-logo{
+margin-bottom: 30px;
+margin-left: 30px;
+}
+.clients-logo:nth-child(2n + 1) {
+margin-left: 0px;
 }
 .social-icons-link {
 display: inline-flex;
