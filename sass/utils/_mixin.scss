@@ -1,0 +1,9 @@
+@mixin centeredFlex($type: felx){
+    display: $type;
+    align-items: center;
+    justify-content: center;
+}
+@mixin bordered($color: black, $type: solid) {
+    border-top: 1px $type $color;
+    border-bottom: 1px $type $color;
+}

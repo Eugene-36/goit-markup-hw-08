@@ -1,0 +1,42 @@
+.section-work-company {
+    padding-bottom: 94px;
+}
+
+.section-title-style {
+margin-top: 0px;
+margin-bottom: 50px;
+color: $head-color;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+}
+.company {
+display: flex;
+flex-wrap: wrap;
+}
+.company-item {
+width: calc((100% - 2 * 30px) / 3 );
+margin-right: 30px;
+}
+.thumb {
+    position: relative;
+    /* margin: 10px; */
+}
+.company img {
+    display: block;
+    &{
+        border-style: none;
+    }
+}
+.thumb > h3 {
+position: absolute;
+bottom: 0;
+width: 100%;
+height: 70px;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+color: $white-color;
+background: $abso-bg;
+}

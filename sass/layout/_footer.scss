@@ -1,0 +1,154 @@
+.color-footer {
+    background: $footer-color;
+    color: $white-color;
+}
+
+.contact-info-new{
+    .detailes a{
+        color: $primary-text-color ;
+        text-decoration: none;
+        font-style: normal;
+      }
+      .location a{
+        color: $white-color ;
+        text-decoration: none;
+        font-style: normal;
+      }
+
+}
+.flex-new {
+display: flex;
+justify-content: space-between;
+}
+.shape-footer {
+width: 1170px;
+height: 252px;
+padding-top: 60px;
+padding-bottom: 60px;
+align-items: baseline;
+}
+.common {
+margin-right: 69px;
+display: block;
+margin: 0px;
+}
+.location {
+margin-top: 20px;
+}
+.contact-info-new{
+    .detailes {
+       margin-top: 9px;
+    }
+}
+.contact-info-color {
+transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+a.contact-info-color.link-underline{
+    &:focus{
+        color: $accent-color;
+    }
+    
+}
+.detailes{
+    &:hover a{
+        color: $accent-color;
+    }
+}
+.common:not(:last-child) {
+margin-right: 30px;
+}
+.common {
+margin-right: 69px;
+display: block;
+margin: 0px;
+}
+.call-to-act {
+margin-bottom: 20px;
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+color: $white-color;
+}
+.social {
+display: flex;
+margin-top: 20px;
+}
+.social-network:not(:last-child) {
+margin-right: 10px;
+}
+.style-inst, .style-twit, .style-face, .style-in {
+transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.style-inst, .style-twit, .style-face, .style-in {
+background-size: 20px;
+background-color: rgba(255, 255, 255, 0.1);
+background-repeat: no-repeat;
+background-position: center;
+border-radius: 50%;
+}
+.site-nav-yet a {
+justify-content: center;
+align-items: center;
+display: flex;
+height: 44px;
+width: 44px;
+}
+.focus-footer {
+transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.separation {
+    display: flex;
+}
+.comment-footer {
+overflow: hidden;
+width: 358px;
+height: 50px;
+padding-top: 15px;
+padding-bottom: 15px;
+padding-left: 10px;
+margin-right: 12px;
+
+font-family: Roboto;
+font-size: 16px;
+line-height: 1.25;
+
+
+display: flex;
+align-items: center;
+letter-spacing: 0.03em;
+
+border: 1px solid rgba(255, 255, 255, 0.3);
+box-sizing: border-box;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+background: $footer-color;
+color: $white-color;
+}
+textarea{
+resize: none;
+}
+
+.button::after {
+content: "";
+margin-left: 10px;
+width: 24px;
+height: 24px;
+background-image: url(../../img/telegram.svg);
+}
+.style-inst, .style-twit, .style-face, .style-in {
+    &:hover{
+        background-color: $accent-color;
+    }
+    
+}
+.focus-footer{
+    &:focus{
+        border-radius: 50%;
+        background-color: $accent-color;
+    }
+}
+.appearance-social {
+fill: $grey;
+width: 20px;
+height: 20px;
+}

@@ -1,0 +1,156 @@
+.page-header {
+width: auto;
+border: 1px solid $border-color;
+}
+.nav-info {
+display: flex;
+align-items: center;
+}
+.container-head {
+margin-left: auto;
+margin-right: auto;
+width: 1230px;
+/* outline: 2px solid tomato; */
+padding-left: 15px;
+padding-right: 15px;
+}
+.navigation {
+display: flex;
+align-items: center;
+}
+
+
+.site-nav {
+    display: flex;
+}
+
+.list {
+padding: 0;
+margin: 0;
+list-style: none;
+}
+a.link.current.link-underline {
+position: relative;
+display: inline-flex;
+justify-content: center;
+}
+
+.site-nav .link.current {
+color: $accent-color;
+}
+.site-nav .link {
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.site-nav .link {
+display: block;
+padding-top: 32px;
+padding-bottom: 32px;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+color: $head-color;
+}
+.current::after{
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0; 
+    width: 50px;
+    height: 4px;
+    
+    background: $accent-color;
+    border-radius: 2px;   
+    }
+.site-nav .item + .item {
+    margin-left: 50px;
+}
+
+.site-nav .link {
+display: block;
+padding-top: 32px;
+padding-bottom: 32px;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+color: $head-color;
+
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+text-decoration: none;
+}
+.nav-info >.contact-info {
+margin-left: auto;
+}
+.contact-info {
+display: flex;
+}
+.list {
+padding: 0;
+margin: 0;
+list-style: none;
+}
+.position {
+display: inline-flex;
+align-items: center;
+}
+.text-light {
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-info svg {
+margin-right: 10px;
+align-items: center;
+fill: $primary-text-color;
+}
+.text-light svg {
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-info .item + .item {
+margin-left: 30px;
+}
+
+.text-light {
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+color: $primary-text-color;
+
+text-decoration: none;
+font-weight: 500;
+}
+.contact-info svg {
+margin-right: 10px;
+align-items: center;
+fill: $primary-text-color;
+}
+
+.text-light svg {
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.site-nav .link{
+    &:hover,
+    &:focus{
+        color: $accent-color;
+    }
+}
+.text-light {
+    &:hover,
+    &:focus{
+        color: $accent-color;
+    }
+}
+.text-light {
+  &:hover svg,
+  &:focus svg{
+    fill: $accent-color;
+  }
+}
+.section-title-style-st{
+margin-top: 20px;
+margin-bottom: 0;
+padding-left: 24px;
+
+color: $head-color;   
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+    }

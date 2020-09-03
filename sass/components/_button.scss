@@ -1,0 +1,35 @@
+.button-hero {
+min-width: 200px;
+border: 1px solid transparent;
+border-radius: 4px;
+padding: 10px 32px;
+display: inline-block;
+height: 50px;
+
+color: $white-color;
+background-color: $accent-color;
+text-decoration: none;
+letter-spacing: 0.06em;
+font-weight: 700;
+font-family: Roboto;
+font-size: 16px;
+
+line-height: 1.87;
+align-items: center;
+text-align: center;
+}
+.button.primary {
+padding-top: 10px;
+padding-right: 29px;
+padding-left: 29px;
+border-radius: 4px;
+display: flex;
+border: 1px solid transparent;
+color: $white-color;
+background-color: $accent-color;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.8;
+
+text-decoration: none;
+}

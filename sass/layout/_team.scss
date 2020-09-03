@@ -1,0 +1,111 @@
+.information-about-team {
+background: #F5F4FA; 
+}
+.space-top {
+padding-top: 94px;
+padding-bottom: 94px;
+}
+
+.section-title-style {
+margin-top: 0px;
+margin-bottom: 50px;
+color: $head-color;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+}
+.position-for-all {
+   display: flex;
+}
+.info-team:not(:last-child) {
+   margin-right: 30px;
+}
+.info-team {
+   width: calc((100% - 30px * 3) / 4);
+   padding-bottom: 24px;
+   background-color: $white-color;
+   text-align: center;
+   &{
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
+   }
+}
+.position-for-all img {
+   display: block;
+}
+img {
+   border-style: none;
+}
+.section-title-info {
+margin-top: 30px;
+margin-bottom: 0px;
+text-align: center;
+color: $head-color;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.18;
+}
+.section-title-name {
+margin-top: 10px;
+margin-bottom: 0px;
+text-align: center;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.18;
+}
+
+.team-social-item:not(:last-child) {
+   margin-right: 10px;
+}
+
+.team-social-item {
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-social-item {
+   fill: $grey;
+   border-radius: 50%;
+}
+.team-social-item {
+   justify-content: center;
+   margin-left: 0px;
+   margin-top: 0px;
+}
+.site-nav-yet a {
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   height: 44px;
+   width: 44px;
+}
+.focuse-ligth {
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.appearance-social {
+   fill: $grey;
+   width: 20px;
+   height: 20px;
+}
+.team-social{
+   margin-top: 16px;
+}
+.team-social-item{
+       &:hover {
+   background-color: $accent-color;
+  }
+}
+.team-social-item:hover svg {
+   fill: $white-color;
+}
+.focuse-ligth:focus {
+   background-color: $accent-color;
+   border-radius: 50%;
+}
+.focuse-ligth {
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-social-item{
+   & :focus .appearance-social{
+      fill: $white-color;
+   }
+}

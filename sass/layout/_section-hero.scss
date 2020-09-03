@@ -1,0 +1,32 @@
+.section-hero {
+text-align: center;
+}
+
+.hero {
+max-width: 1600px;
+height: 600px;
+padding-top: 200px;
+margin-left: auto;
+margin-right: auto;
+align-items: center;
+background-image: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  ),url(../img/Img-headr-opt.jpg);
+background-color: $head-color;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.section-title-hero {
+margin-top: 0;
+margin-bottom: 30px;
+color: $white-color;
+font-weight: 900;
+font-size: 44px;
+line-height: 1.363;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}

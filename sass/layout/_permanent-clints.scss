@@ -1,0 +1,64 @@
+.constant-client {
+padding-top: 94px;
+padding-bottom: 94px;
+}
+
+.section-title-style {
+margin-top: 0px;
+margin-bottom: 50px;
+color: $head-color;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+}
+.clients {
+display: flex;
+justify-content: center;
+justify-content: space-around;
+}
+.clients-logo, .social-icon, .social-icons-link, .social-icon {
+transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-logo {
+margin-right: 30px;
+}
+.social-icons-link {
+display: inline-flex;
+border: 1px solid $grey;
+border-radius: 4px;
+width: 170px;
+height: 90px;
+border-radius: 4px;
+outline-color: $accent-color;
+align-items: center;
+justify-content: center;
+}
+.clients-logo, .social-icon, .social-icons-link, .social-icon {
+transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ya-co, .tagline-here, .company-icon, .foster-peters, .brend, .company-tagline {
+fill: $grey;
+vertical-align: middle;
+}
+.social-icons-link {
+    &:hover,
+    &:focus{
+        border: 1px solid $accent-color;
+    }
+}
+
+.clients-logo {
+    &:hover svg{
+        fill:  $accent-color;
+    }
+    
+}
+.social-icons-link {
+    
+       &:focus svg{
+        fill:  $accent-color;  
+       } 
+}
