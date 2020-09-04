@@ -889,6 +889,10 @@ a.link.current.link-underline {
 @media (min-width: 1200px) {
   .clients-logo:nth-child(-n + 6) {
     margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  .clients-logo:nth-child(-n + 5) {
+    margin-right: 30px;
   }
 }
 
