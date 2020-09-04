@@ -19,12 +19,23 @@ padding-bottom: 60px;
         justify-content: center;
        }
        @include for-size(desktop){
-        display: flex;
+        display: inline-flex;
+        flex-wrap: inherit;
        }
 }
 .list-qualities-text:not(:last-child){
 margin-bottom: 30px;
 }
+.list-qualities-text:not(:last-child){
+    @include for-size(desktop){
+        // margin-right: 30px;
+        margin: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+// .list-qualities-text
+
 // @include for-size(tablet-landscape){
 //     // width: 768px;
 //  }
@@ -42,12 +53,20 @@ margin-bottom: 30px;
     margin-left: 30px;
    }
 }
+@include for-size(desktop){
+    min-width: 270px;
 
+ }
 //    &{
 //         width: calc((100% - 90px) / 3);
 //    }
 }
-
+.list-qualities-text:nth-child(2) {
+    @include for-size(desktop){
+        margin-right: 30px;
+    }
+    
+  }
 
 .list-qualities div {
 justify-content: center;

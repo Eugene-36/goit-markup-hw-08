@@ -716,14 +716,23 @@ a.link.current.link-underline {
 
 @media (min-width: 1200px) {
   .list-qualities {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: inherit;
+        flex-wrap: inherit;
   }
 }
 
 .list-qualities-text:not(:last-child) {
   margin-bottom: 30px;
+}
+
+@media (min-width: 1200px) {
+  .list-qualities-text:not(:last-child) {
+    margin: 0px;
+    margin-bottom: 0px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -735,6 +744,18 @@ a.link.current.link-underline {
   }
   .list-qualities-text:nth-child(2n) {
     margin-left: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .list-qualities-text {
+    min-width: 270px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .list-qualities-text:nth-child(2) {
+    margin-right: 30px;
   }
 }
 
@@ -865,9 +886,17 @@ a.link.current.link-underline {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-logo {
-  margin-bottom: 30px;
-  margin-left: 30px;
+@media (min-width: 1200px) {
+  .clients-logo:nth-child(-n + 6) {
+    margin-left: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .clients-logo {
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .social-icons-link {
@@ -919,6 +948,12 @@ a.link.current.link-underline {
   padding-bottom: 94px;
 }
 
+@media (min-width: 1200px) {
+  .space-top {
+    padding-top: 94px;
+  }
+}
+
 .section-title-style {
   margin-top: 0px;
   margin-bottom: 30px;
@@ -933,6 +968,34 @@ a.link.current.link-underline {
   .section-title-style {
     margin-bottom: 50px;
     font-size: 36px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .position-for-all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 1200px) {
+  .info-team:nth-child(-n + 4) {
+    min-width: 270px;
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .info-team:nth-child(2) {
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .info-team {
+    margin-left: 0px;
+    min-width: 270px;
   }
 }
 
