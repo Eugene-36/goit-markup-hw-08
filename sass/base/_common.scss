@@ -21,7 +21,17 @@ margin: 0;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  max-width: 1200px;
+  width: 100%;
+  // width: 1200px;
   
+  @include for-size(tablet-portrait){
+   width: 480px;
+  }
+  @include for-size(tablet-landscape){
+    width: 768px;
+   }
+   @include for-size(desktop){
+    width: 1200px;
+   }
   /* outline: 2px solid tomato; */
   }

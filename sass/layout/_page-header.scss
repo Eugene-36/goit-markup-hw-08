@@ -14,17 +14,17 @@ margin-right: auto;
 padding-left: 15px;
 padding-right: 15px;
 
-@media screen and (min-width: 480px) {
+@include for-size(tablet-portrait){
     width: 480px;
-    background-color: turquoise;
+    background-color: yellow;
 }
-@media screen and (min-width: 768px) {
+@include for-size(tablet-landscape){
     width: 768px;
     background-color: violet;
 }
-@media screen and (min-width: 1200px) {
+@include for-size(desktop){
     width: 1200px;
-    background-color: yellow;
+    background-color: teal;
 }
 }
 .navigation {

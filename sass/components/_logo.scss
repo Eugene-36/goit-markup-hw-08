@@ -1,4 +1,4 @@
-.logo {
+.logo-head {
 margin-right: 70px;
 font-size: 26px;
 line-height: 1.19;
@@ -7,6 +7,17 @@ text-decoration: none;
 
 font-family: Raleway;
 font-weight: bold;
+}
+
+.logo-footer{
+    // margin-right: 70px;
+    font-size: 26px;
+    line-height: 1.19;
+    color: $accent-color;
+    text-decoration: none;
+    
+    font-family: Raleway;
+    font-weight: bold;
 }
 .color-logo {
     color: $head-color;
