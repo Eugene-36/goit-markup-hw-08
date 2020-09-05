@@ -87,6 +87,12 @@ line-height: 1.1;
 text-transform: uppercase;
 letter-spacing: 0.03em;
 margin: 0px;
+@include for-size(tablet-landscape){
+    text-align: left;
+   }
+   @include for-size(desktop){
+    text-align: left;
+}
 }
 .section-title-text {
 font-weight: 400;

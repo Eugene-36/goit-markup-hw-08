@@ -86,6 +86,10 @@ font-size: 14px;
 line-height: 1.14;
 text-transform: uppercase;
 color: $white-color;
+@include for-size(desktop){
+    text-align: left;
+    margin-bottom: 0px;
+}
 }
 .social {
 display: flex;
@@ -153,7 +157,24 @@ color: $white-color;
 @include for-size(tablet-landscape){
     width: 450px;
    }
+   @include for-size(desktop){
+    width: 358px;
+   }
 }
+
+@include for-size(desktop){
+    .common:nth-child(1) {
+        margin-right: 70px;
+ }
+}
+@include for-size(desktop){
+    .separation{
+     display: flex;
+ }
+}
+
+
+
 textarea{
 resize: none;
 }

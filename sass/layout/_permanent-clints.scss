@@ -16,7 +16,11 @@ text-align: center;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
-
+}
+.clients li{
+    @include for-size(desktop){
+        margin-bottom: 0px;
+}
 // display: flex;
 // justify-content: center;
 // justify-content: space-around;
@@ -24,11 +28,6 @@ justify-content: center;
 .clients-logo, .social-icon, .social-icons-link, .social-icon {
 transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-// .clients-logo {
-// margin-right: 30px;
-// }
-
 
 @include for-size(desktop){
     .clients-logo:nth-child(-n + 6) {
@@ -40,22 +39,40 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
      }
 }
 
-// @include for-size(desktop){
-//     .clientslast-of-type{
-//           margin-left: 30px;
-//     }
-//  }
+.clients-logo:nth-child(-n + 6) a{
+    @include for-size(desktop){
+width: 170px;
+       }
+}
+
 
  .clients-logo{
     @include for-size(tablet-landscape){
      margin-left: 30px;
      margin-bottom: 30px;
     }
-    
-    // margin-left: 30px;
 }
-// .clients-logo:nth-child(2n + 1) {
-// margin-left: 0px;
+
+.clients-logo a{
+    @include for-size(tablet-landscape){
+width: 210px;
+       }
+}
+
+.clients-logo a{
+    @include for-size(tablet-portrait){
+        width: 210px;
+    }
+}
+
+
+// @include for-size(tablet-portrait){
+//     .clients-logo:nth-child(2n + 1) {
+//         margin-right: 30px;
+//     }
+//     // .clients-logo:nth-child(-n + 4)  {
+//     //     margin-bottom: 30px;
+//     // }
 // }
 .social-icons-link {
 display: inline-flex;
