@@ -240,6 +240,7 @@ border-top: 1px solid $primary-text-color;
 
 background-color: none;
 border: none;
+cursor: pointer;
     
 @include for-size(tablet-landscape){
     margin: 0px;
@@ -249,6 +250,9 @@ border: none;
    }
   /* outline: 2px solid tomato; */
   
+}
+.btn-menu:hover .burger{
+ fill: $accent-color;
 }
 .burger{
 width: 40px;

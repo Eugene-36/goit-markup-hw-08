@@ -4,19 +4,84 @@ background: $footer-color;
 .color-logo-white{
 color: $white-color;
 }
-
+.logo {
+    margin-right: 70px;
+    font-size: 26px;
+    line-height: 1.19;
+    color: $accent-color;
+    font-family: Raleway,cursive;
+    font-weight: bold;
+    text-decoration: none;
+}
 /* Выравнивание для кнопок */
 .filter{
 display: flex;
-justify-content: center;
+// justify-content: center;
+flex-flow: wrap;
+@include for-size(tablet-landscape){
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+   }
+   @include for-size(desktop){
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+   }
 }
 .section-main-content{
-padding-top: 94px;
+// padding-top: 94px;
+
+
+padding-top: 60px;
 padding-bottom: 94px;   
 }
 .filter .filter-bt + .filter-bt{
-margin-left: 8px;
+// margin-left: 8px;
+@include for-size(tablet-landscape){
+    margin-left: 8px;
+    justify-content: center;
+   }
+   @include for-size(desktop){
+    margin-left: 8px;
+   }
 }
+
+.filter-bt:nth-child(-n + 3){
+    margin-right: 10px;
+    }
+    .filter-bt:nth-last-child(-n + 1){
+    margin-left: 10px;
+    }
+    .filter-bt:nth-last-child(-n + 2){
+        margin-top: 10px;
+    }
+
+@include for-size(tablet-portrait){
+    .filter-bt:nth-child(-n + 3){
+        margin-right: 10px;
+        
+        }
+        .filter-bt:nth-last-child(-n + 2){
+        
+        margin-top: 0px;
+        }
+        .filter-bt:nth-last-child(-n + 1){
+            margin-left: 0px;
+            margin-top: 10px;
+        }
+   }
+ @include for-size(tablet-landscape){
+    .filter-bt:nth-last-child(-n + 1){
+        margin-top: 0px;
+    }
+    .filter-bt:nth-child(-n + 4){
+        margin-right: 8px;
+        justify-content: center;
+    }
+}
+.list-item:nth-child(-n + 5)
+
 .list-qualities-text{
     &:nth-child(5n){
         margin-right: 0;
@@ -135,11 +200,25 @@ line-height: 1.8;
 .flex-element{
 display: flex;
 flex-wrap: wrap;
+@include for-size(tablet-portrait){
+    justify-content: center;
+   }
+
       & img{
     display: block;
     border: 1px solid $portf-border;
+    @include for-size(tablet-portrait){
+        width: 100%;
+       }
+       @include for-size(tablet-landscape){
+        width: 370px;
     }
+    @include for-size(desktop){
+     
+    }
+  }
 }
+
 .flex-border{
 display: block;
 border: 1px solid $portf-border;
@@ -149,7 +228,26 @@ padding-bottom: 20px;
 margin-right: 30px;
 margin-bottom: 30px;
 box-sizing: border-box;
+
 }
+@include for-size(tablet-portrait){
+    .flex-element-item:nth-child(-n + 9){
+      margin-left: 0px;
+      margin-right: 0px;
+      width: 100%;
+    }
+   }
+   @include for-size(tablet-portrait){
+    .flex-element-item:nth-last-child(-n + 2) {
+       margin-top: 30px;
+    }
+   }
+.flex-element{
+    @include for-size(tablet-landscape){
+        width: 370px;
+    }
+}
+
 .flex-element-item{
     &:nth-child(3n){
         margin-right: 0;
