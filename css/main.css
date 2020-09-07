@@ -1473,12 +1473,7 @@ img {
   height: 100%;
 }
 
-.box.is-cover {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.menu {
+.menu.is-open {
   position: absolute;
   top: 55%;
   left: 50%;
