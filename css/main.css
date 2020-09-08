@@ -1439,7 +1439,7 @@ img {
   margin-right: 7px;
   border-color: #2196F3;
   background-color: #2196F3;
-  background-image: url(../../img/check-box-opt.svg);
+  background-image: url(../img/check-box-opt.svg);
   background-size: contain;
   background-origin: border-box;
 }
