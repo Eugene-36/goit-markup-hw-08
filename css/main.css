@@ -2348,7 +2348,7 @@ textarea {
   margin-left: 10px;
   width: 24px;
   height: 24px;
-  background-image: url(../../img/telegram.svg);
+  background-image: url(../img/telegram.svg);
 }
 
 .style-inst:hover, .style-twit:hover, .style-face:hover, .style-in:hover {
