@@ -1,13 +1,16 @@
 .page-header {
 width: auto;
 border: 1px solid $border-color;
-// position: fixed;
+ position: fixed;
 width: 100%;
 background-color: $white-color;
 border: 1px solid #ECECEC;
 
 @include for-size(tablet-landscape){
   position: relative;
+}
+@include for-size(desktop){
+    position: relative;
 }
 }
 .nav-info {

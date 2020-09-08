@@ -411,12 +411,19 @@ body {
 .page-header {
   width: auto;
   border: 1px solid #ECECEC;
+  position: fixed;
   width: 100%;
   background-color: #FFFFFF;
   border: 1px solid #ECECEC;
 }
 
 @media (min-width: 768px) {
+  .page-header {
+    position: relative;
+  }
+}
+
+@media (min-width: 1200px) {
   .page-header {
     position: relative;
   }
