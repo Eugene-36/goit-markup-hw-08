@@ -211,6 +211,7 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 div.menu-box.is-open{
 position: absolute;
+position: fixed;
 top: 26%;
 left: 50%;
 transform: translate(-50%, -50%);
@@ -219,9 +220,10 @@ width: 480px;
 height: 453px;
 background-color: white;
 
-@include for-size(tablet-portrait){
-    width: 480px;
-   }
+
+// @include for-size(tablet-portrait){
+//     width: 480px;
+//    }
    @include for-size(tablet-landscape){
      display: none;
     }
@@ -229,7 +231,6 @@ background-color: white;
      display: none;
     }
 }
-
 
 .menu-container{
     @include for-size(tablet-landscape){

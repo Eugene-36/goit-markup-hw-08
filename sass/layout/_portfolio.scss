@@ -5,7 +5,7 @@ background: $footer-color;
 color: $white-color;
 }
 .logo {
-    margin-right: 70px;
+    // margin-right: 70px;
     font-size: 26px;
     line-height: 1.19;
     color: $accent-color;
@@ -228,13 +228,12 @@ padding-bottom: 20px;
 margin-right: 30px;
 margin-bottom: 30px;
 box-sizing: border-box;
-
 }
 @include for-size(tablet-portrait){
     .flex-element-item:nth-child(-n + 9){
       margin-left: 0px;
       margin-right: 0px;
-      width: 100%;
+      width: 450px;
     }
    }
    @include for-size(tablet-portrait){
@@ -242,22 +241,58 @@ box-sizing: border-box;
        margin-top: 30px;
     }
    }
-.flex-element{
     @include for-size(tablet-landscape){
-        width: 370px;
-    }
+ .flex-element-item:nth-child(-n + 9){
+       width: calc((100% - 30px)/2)
+     }
+     .flex-element-item:nth-last-child(-n + 2){
+          margin-top: 0px;
+     }
+     .flex-element-item:nth-child(2n){
+          margin-left: 30px;
+     }
+     .flex-element-item:nth-last-child(1){
+        //  margin-top: 30px;
+         margin-right: auto;
+     }
 }
 
-.flex-element-item{
-    &:nth-child(3n){
-        margin-right: 0;
+
+// .flex-element-item{
+//     &:nth-child(3n){
+//         margin-right: 0;
+//     }
+// } 
+@include for-size(desktop){
+    .flex-element-item{
+         &:nth-child(3n){
+            margin-right: 0;
+         }
+     } 
+}
+ 
+@include for-size(desktop){
+    .flex-element-item{
+        &:nth-child(n + 7){
+            margin-bottom: 0px;
+        }
     }
-} 
-.flex-element-item{
-    &:nth-child(n + 7){
-        margin-bottom: 0px;
+}
+@include for-size(desktop){
+    .flex-element-item:nth-child(-n + 9){
+        width: 370px;
     }
-}  
+    .flex-element-item:nth-child(-n + 9){
+        margin: 0;
+    }
+    .flex-element-item:nth-child(-n + 9){
+        margin-right: 30px;
+        margin-bottom: 30px;
+  }
+    .flex-element-item:nth-child(3n){
+    margin-right: 0px
+  }
+}
 .without-style{   
 /* position: relative;     */
 display: block;
