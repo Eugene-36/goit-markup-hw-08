@@ -1133,7 +1133,7 @@ a.link.current.link-underline {
 @media (min-width: 1200px) {
   .info-team {
     margin-left: 0px;
-    min-width: 270px;
+    width: 270px;
   }
 }
 
@@ -1171,7 +1171,7 @@ a.link.current.link-underline {
 
 img {
   border-style: none;
-  min-width: 100%;
+  width: 100%;
 }
 
 .section-title-info {

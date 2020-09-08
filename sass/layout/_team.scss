@@ -57,7 +57,7 @@ text-align: center;
    @include for-size(desktop){
       // margin-right: 30px;
       margin-left: 0px;
-      min-width: 270px;
+      width: 270px;
      } 
  }
 .info-team {
@@ -92,7 +92,7 @@ text-align: center;
 
 img {
    border-style: none;
-   min-width: 100%;
+   width: 100%;
 }
 
 .section-title-info {
