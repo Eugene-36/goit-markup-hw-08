@@ -22,11 +22,14 @@ left: 50%;
 transform: translate(-50%, -50%);
 max-width: 581px;
 // width: 456px;
-width: 448px;
+// width: 448px;
 height: 581px;
 padding-top: 30px;
 background: $white-color;
 
+@include for-size(tablet-portrait){
+    width: 456px;
+   }
 
 @include for-size(tablet-portrait){
     max-width: 456px;
@@ -94,13 +97,15 @@ color: $head-color;
         }
 }
 .form {
-width: 448px;
+    width: 320px;
+// width: 448px;
 // margin-top: 12px;
 margin-left: auto;
 margin-right: auto;
 padding:15px;
 
 @include for-size(tablet-portrait){
+    width: 448px;
     padding-left: 20px;
     padding-right: 20px;
    }
