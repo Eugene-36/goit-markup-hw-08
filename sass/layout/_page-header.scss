@@ -28,15 +28,13 @@ padding-right: 15px;
 
 @include for-size(tablet-portrait){
     width: 480px;
-    // background-color: yellow;
+    
 }
 @include for-size(tablet-landscape){
     width: 768px;
-    // background-color: violet;
 }
 @include for-size(desktop){
     width: 1200px;
-    // background-color: teal;
 }
 }
 .navigation {
