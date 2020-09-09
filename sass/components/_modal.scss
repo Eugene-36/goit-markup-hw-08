@@ -104,14 +104,17 @@ padding:15px;
 
 @include for-size(tablet-portrait){
     // width: 448px;
+    padding: 15px;
     padding-left: 20px;
     padding-right: 20px;
    }
   @include for-size(tablet-landscape){
     width: 448px;
+    padding: 15px;
 }
     @include for-size(desktop){
-     padding: 20px;
+     padding-left: 0px;
+     padding-right: 0px;
 
     }
 }
