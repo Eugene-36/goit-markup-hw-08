@@ -21,7 +21,8 @@ top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 max-width: 581px;
-width: 100%;
+// width: 456px;
+width: 448px;
 height: 581px;
 padding-top: 30px;
 background: $white-color;
@@ -32,8 +33,10 @@ background: $white-color;
    }
 
     @include for-size(desktop){
-     max-width: 528px;
-     padding-top: 40px;
+        max-width: 581px;
+        width: 100%;
+        height: 581px;
+        padding-top: 40px;
     }
 }
 .btn-apperance {
@@ -76,9 +79,12 @@ color: $head-color;
 
 }
 .inscript{
-    text-align: center;  
+    text-align: center;
+    padding-right: 15px;
+    padding-top: 10px;  
     @include for-size(tablet-portrait){
        padding-left: 15px;
+       padding-top: 0px;
        }
     //    @include for-size(tablet-landscape){
     //      width: 768px;
@@ -89,9 +95,10 @@ color: $head-color;
 }
 .form {
 width: 448px;
-margin-top: 12px;
+// margin-top: 12px;
 margin-left: auto;
 margin-right: auto;
+padding:15px;
 
 @include for-size(tablet-portrait){
     padding-left: 20px;
@@ -101,7 +108,8 @@ margin-right: auto;
 //      width: 768px;
 //     }
     @include for-size(desktop){
-     padding: 0px;
+     padding: 20px;
+
     }
 }
 .form-filed {
@@ -204,7 +212,7 @@ justify-content: center;
 }
 .btn-style {
 min-width: 200px;
-height: 50px;
+height: 40px;
 letter-spacing: 0.06em;
 font-family: Roboto;
 font-size: 16px;
