@@ -390,6 +390,20 @@ margin-top: 120px;
 .site-navig{
 display: flex;
 }
+.current-new::after {
+    content: "";
+    // position: absolute;
+    margin-top: 15px;
+    display: block;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background: $accent-color;
+    border-radius: 2px;
+}
+a.link-nav.current-new.link-underline-nav{
+  color: $accent-color;  
+}
 .list-none{
 padding: 0;
 margin: 0;
