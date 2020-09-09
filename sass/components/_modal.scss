@@ -28,11 +28,9 @@ padding-top: 30px;
 background: $white-color;
 
 @include for-size(tablet-portrait){
-    width: 456px;
-   }
-
-@include for-size(tablet-portrait){
-    max-width: 456px;
+    .modal{
+        width: 456px;
+    }
    }
 
     @include for-size(desktop){
@@ -105,13 +103,13 @@ margin-right: auto;
 padding:15px;
 
 @include for-size(tablet-portrait){
-    width: 448px;
+    // width: 448px;
     padding-left: 20px;
     padding-right: 20px;
    }
-//    @include for-size(tablet-landscape){
-//      width: 768px;
-//     }
+  @include for-size(tablet-landscape){
+    width: 448px;
+}
     @include for-size(desktop){
      padding: 20px;
 
