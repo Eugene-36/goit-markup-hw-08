@@ -1,5 +1,10 @@
 .section-work-company {
     padding-bottom: 94px;
+    display: none;
+ 
+        @include for-size(desktop){
+         display: block;
+        }
 }
 
 .section-title-style {

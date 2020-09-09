@@ -42,6 +42,10 @@
     }
 }
 
+.clients-logo:nth-child(-n + 5){
+    margin-bottom: 30px;
+}
+
 @include for-size(desktop){
     .social-icons-link:nth-child(-n + 6){
        width: 170px;
@@ -57,6 +61,8 @@
     // .clients-logo {
     // margin-right: 30px;
     // }
+
+
     .social-icons-link {
     display: inline-flex;
     border: 1px solid $grey;

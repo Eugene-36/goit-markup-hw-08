@@ -303,8 +303,8 @@ background-color: white;
     }
 .icon-cross {
 position: absolute;
-top: 15px;
-right: 15px;
+width: 25px;
+height: 25px;
 display: inline-flex;
 width: 40px;
 height: 40px;
@@ -316,7 +316,7 @@ border: none;
 cursor: pointer;
 
 }
-.menu-button.is-open:hover .icon-cross  {
+.menu-button:hover .icon-cross  {
     fill: $accent-color;
 }
 
@@ -343,20 +343,20 @@ cursor: pointer;
  fill: $accent-color;
 }
 .menu-button{
-    display: flex;
+display: flex;
 
-    width: 40px;
-    height: 40px;
-  
-    margin-left: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    align-items: center;
-    justify-content: center;
-    // margin: 0;
-    padding: 0;
-    border: none;
-    background-color: transparent;
+width: 25px;
+height: 25px;
+
+margin-left: auto;
+margin-top: auto;
+margin-bottom: auto;
+align-items: center;
+justify-content: center;
+// margin: 0;
+padding: 0;
+border: none;
+background-color: transparent;
 @include for-size(tablet-landscape){
     display: none;
     margin: 0px;

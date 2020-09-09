@@ -5,6 +5,7 @@ border: 1px solid $border-color;
 width: 100%;
 background-color: $white-color;
 border: 1px solid #ECECEC;
+z-index: 1;
 
 @include for-size(tablet-landscape){
   position: relative;
