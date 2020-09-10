@@ -1608,14 +1608,6 @@ img {
   display: none;
 }
 
-.menu-button.is-open .icon-cross {
-  display: block;
-}
-
-.menu-button.is-open .icon-menu {
-  display: none;
-}
-
 .menu-box.is-open {
   display: none;
   position: absolute;
