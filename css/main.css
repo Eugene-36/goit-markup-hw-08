@@ -310,10 +310,6 @@ html {
           box-sizing: border-box;
 }
 
-* {
-  outline: 2px solid teal;
-}
-
 *,
 *::before,
 *::after {
@@ -1627,16 +1623,15 @@ img {
 .menu-box.is-open {
   display: block;
   position: absolute;
-  left: 0;
+  left: 2%;
   top: 100%;
   top: 26%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, 5%);
+          transform: translate(-50%, 5%);
   min-width: 480px;
   height: 453px;
-  margin-top: 250px;
-  background-color: white;
+  background-color: #FFFFFF;
 }
 
 @media (min-width: 768px) {
