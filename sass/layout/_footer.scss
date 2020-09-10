@@ -165,6 +165,7 @@ color: $white-color;
 @include for-size(desktop){
     .common:nth-child(1) {
         margin-right: 70px;
+        text-align: start;
  }
 }
 @include for-size(desktop){

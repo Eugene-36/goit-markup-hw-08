@@ -225,13 +225,14 @@ border: 1px solid $portf-border;
 padding-bottom: 20px;
 }
 .flex-element-item{
-margin-right: 30px;
+// margin-right: 30px;
 margin-bottom: 30px;
 box-sizing: border-box;
 }
 @include for-size(tablet-portrait){
     .flex-element-item:nth-child(-n + 9){
       margin-left: 0px;
+      margin-right: 30px;
       margin-right: 0px;
       width: 450px;
     }
