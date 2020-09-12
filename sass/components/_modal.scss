@@ -287,8 +287,6 @@ min-width: 480px;
 height: 453px;
 background-color: $white-color;
 
-
-
    @include for-size(tablet-landscape){
      display: none;
     }
@@ -307,7 +305,7 @@ background-color: $white-color;
    @include for-size(tablet-landscape){
       .menu-box{
         display: none;
-    }
+     }
     }
     @include for-size(desktop){
         .menu-box{
